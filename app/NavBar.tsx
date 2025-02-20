@@ -3,9 +3,9 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <nav>
+    <nav className='flex space-x-6'>
       <Link href="/">Logo</Link> 
-      <ul>
+      <ul className='flex space-x-6'>
         <li><Link href="/">Dashboard</Link></li>
         <li><Link href="/issues">Issues</Link></li>
       </ul>
