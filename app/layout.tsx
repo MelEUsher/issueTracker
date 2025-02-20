@@ -21,22 +21,13 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body className={inter.variable}>
-        <QueryClientProvider>
-          <AuthProvider>
-            <Theme accentColor="violet">
-              <NavBar />
-              <main className="p-5">
-                <Container>{children}</Container>
-              </main>
-            </Theme>
-          </AuthProvider>
-        </QueryClientProvider>
-      </body>
+      <body className={inter.className}>
+       <NavBar />
+      {children}</body>
     </html>
-  );
+  )
 }
